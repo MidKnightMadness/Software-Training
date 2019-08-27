@@ -1,13 +1,25 @@
-package org.tka.robotics;
+package org.tka.robotics.lessons;
 
-public class Variables {
+public class Methods {
 
     public static void main(String[] args) {
+        myMethod();
+        favoriteNumber(17);
+        int lowNumber = 2;
+        int highNumber = makeNumberHigh(lowNumber);
+        System.out.print("I started with " + lowNumber + " and now I have " + highNumber + "!");
+    }
 
-        int someInteger = 1;
-	    double someDouble = 5;
+    private static void myMethod() {
+        System.out.println("I can print from a method!");
+    }
 
-	    System.out.println("The integer is " + someInteger + " and the double is " + someDouble + ".");
+    private static void favoriteNumber(int num) {
+        System.out.println("My favorite number is: " + num);
+    }
+
+    private static int makeNumberHigh(int num) {
+        return num * 78;
     }
 }
 
